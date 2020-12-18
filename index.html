@@ -1,1 +1,80 @@
-<h1> Hello! </h1>
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Are Ya Winning?</title>
+    <style>
+      h1 {
+        color: red;
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .one-box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+      }
+
+      h2 {
+        color: black;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .space {
+        margin-top: 25px;
+      }
+
+      p {
+        color: black;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      h5 {
+        color: black;
+        text-align: center;
+        font-size: 15px;
+
+      }
+
+    </style>
+  </head>
+
+  <body style="background-color: yellow;">
+
+    <div class="one-box">
+
+      <h1> Hello! </h1>
+      <h2> I am in dire need of your opinion today.</h2>
+    </div>
+
+    <br>
+    <br>
+
+    <div style="padding: 75px 0px 50px 0px;">
+      <p> Do you like this website? </p>
+    </div>
+
+    <h5 id="peep"></h5>
+
+
+    <div style="text-align: center;" class="space">
+
+      <button onclick="myFunction('You are amazing... and correct.')">It's Great!</button>
+
+      <button onclick="myFunction('You are stupid... and wrong.')">Absolutely Not. It's terrible.</button>
+
+      <script>
+        function myFunction(name) {
+          document.getElementById("peep").innerHTML = name;
+        }
+
+      </script>
+
+    </div>
+  </body>
+
+</html>
